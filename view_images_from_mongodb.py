@@ -18,7 +18,7 @@ def display_image_from_mongodb(image_doc):
         filename = image_doc.get('filename', 'unknown')
         print(f"\nProcessing image: {filename}")
         
-        # Get image data - in your case it's directly in 'image' field
+        # Get image data 
         image_binary = image_doc.get('image')
         
         if image_binary is None:
