@@ -20,8 +20,7 @@ def save_image_to_mongo(file_path):
         images_collection.insert_one(image_data)  # Insert document into MongoDB
 
 # Specify the folder with images
-dataset_folder = "C:/Users/harsh/OneDrive/Desktop/FALL-2024/603/project/dataset/CrashBest"  # Replace with your folder path
-
+dataset_folder = "C:/Users/harsh/OneDrive/Desktop/FALL-2024/603/project/dataset/CrashBest"  
 # Loop through the images and upload each one to MongoDB
 for file_name in os.listdir(dataset_folder):
     file_path = os.path.join(dataset_folder, file_name)
